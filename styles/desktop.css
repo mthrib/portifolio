@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 2400px;
     margin: 0 auto;
 }
 
@@ -26,7 +27,7 @@ header {
 }
 
 header  .logo > a {
-    font-size: 1.5em;
+    font-size: 3em;
     color: white;
 }
 
@@ -51,6 +52,7 @@ header > .interface {
 }
 
 header  a {
+    font-size: 2em;
     text-decoration: none;
     display: inline-block;
 }
@@ -64,7 +66,7 @@ header nav a:hover {
     color: #ffff;
     text-shadow: 0px 0px 7px white;
     transition: 500ms;
-    font-size: 19px;
+    transform: scale(1.2);
 }
 
 header nav ul {
@@ -76,26 +78,277 @@ header nav ul li {
     padding: 0 40px;
 }
 
-
-header .btn-contato button {
+.btn-contato button {
     color: white;
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
     background-color: #F03029;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     cursor: pointer;
     transition: box-shadow .4s, transform .5s;
 }
 
-header .btn-contato button:hover {
+.btn-contato button:hover {
     box-shadow: 0px 0px 30px #f03029;
     transform: scale(1.2);
 }
 
-
-
-.topo-do-site .interface img {
-    width: 400px;
+span {
+    color: #F03029;
+    text-shadow: 0px 0px 15px #F03029;
 }
+
+h2.titulo {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+/*  BLOCO DO TOPO DO SITE    */
+
+ section.topo-do-site {
+    padding: 40px 4%;
+ }
+
+ .flex > .img-topo-site > img {
+    width: 600px;
+
+ }
+
+ .flex {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+ }
+
+
+ .txt-topo-site h1 {
+    font-size: 4em;
+ }
+
+
+
+
+  .txt-topo-site p {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  .txt-topo-site > .btn-contato > a > button {
+    color: black;
+    padding: 20px 100px;
+    margin-top: 50px;
+    font-size: 2em;
+    
+  }
+
+  .txt-topo-site >.btn-contato button:hover {
+    box-shadow: 0px 0px 30px #f03029;
+    transform: scale(1);
+}
+
+
+.img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* ESTILOS DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    gap: 60px;
+    margin-top: 80px;
+    transition: .3s ease;
+}
+
+.especialidades .especialidades-box:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.35);
+    transform: scale(1.1);
+}
+
+.especialidades .especialidades-box i {
+    font-size: 10em;
+    color: #F03029;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 4em;
+    margin-left: 8%;
+    padding: 40px 0;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 2.5em;
+    margin-left: 8%;
+}
+
+
+/* SOBRE MIM */
+
+.sobre > .interface {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sobre img {
+    padding: 40px;
+    width: 550px;
+    border-radius: 60px;
+}
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+.sobre.txt-sobre {
+    color: white;
+}
+
+.txt-sobre h2 {
+    font-size: 4em;
+    line-height: 70px;
+
+}
+
+.txt-sobre h2 span {
+    display: block;
+    text-indent: 20px;
+    
+}
+
+.txt-sobre p {
+    font-size: 1.5em ;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.btn-social button {
+    margin: 40px 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F03029;
+    border: none;
+    transition: .4s ease-in-out;
+}
+
+.btn-social button:hover {
+    box-shadow: 0px 0px 18px #f03029;
+    transform: scale(1.2);
+}
+
+.btn-social button i {
+    color: white;
+    font-size: 3em;
+}
+
+/* PORTIFÒLIO */
+
+.portifolio {
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.a-port {
+    margin-top: 70px;
+    padding: 30px 200px;
+    border-radius: 50px;
+    background-color: #F03029;
+    transition: .3s ease-in-out;
+    
+}
+
+.a-port:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px #F03029;
+}
+
+.a-port a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* FALE COMIGO */
+
+.formulario {
+    padding: 80px 4%;
+
+}
+
+form {
+    background-color: rgba(69, 69, 69, 0.211);
+    border-radius: 20px;
+    padding: 60px;
+    margin: 80px auto 0 auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #57575738;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.4em;
+}
+
+form textarea {
+    resize: none;
+}
+
+element.style {
+    width: 700px;
+}
+
+
+
+.enviar {
+    background-color: #F03029;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: .3s ease-in-out;
+    
+}
+
+.enviar:hover {
+    box-shadow: 0px 0px 20px #F03029;
+    transform: scale(1.05);
+}
+
+.enviar input {
+    cursor: pointer;
+    background-color:  rgba(69, 69, 69, 0.211);
+}
+
+@keyframes flutuar {
+    0% {
+        top: -10;
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+
+
+ 
