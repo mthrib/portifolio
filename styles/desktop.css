@@ -257,8 +257,17 @@ section.sobre {
 /* PORTIFÒLIO */
 
 .portifolio {
+    border-radius: 20px;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    max-width: 2400px;
     margin-top: 200px;
     margin-bottom: 300px;
+    padding: 40px 4%;
+    margin: 0 auto;
+}
+
+.portifolio > .interface > .flex {
+    flex-wrap: wrap;
 }
 
 .a-port {
@@ -339,9 +348,52 @@ element.style {
     background-color:  rgba(69, 69, 69, 0.211);
 }
 
+/*  ESTLO DO RODAPÉ */
+
+footer {
+    padding: 40p 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex .line-footer {
+
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 600px;
+}
+
+footer .line-footer {
+    padding: 0px 0;
+    border-bottom: 2px solid #F03029;
+}
+
+.line-footer-b {
+    padding: 30px 10% 40px 10%;
+}
+
+.line-footer h2  a{
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.line-footer-b p i {
+    color: #F03029;
+    font-size: 1.6em;
+}
+
+.line-footer-b p a {
+    
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+/*  */
 @keyframes flutuar {
     0% {
-        top: -10;
+        top: -10px;
     }
 
     100% {
