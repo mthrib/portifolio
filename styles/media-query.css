@@ -64,6 +64,11 @@
 
 
 @media (max-width: 768px) {
+
+    * {
+        overflow-x: hidden;
+    }
+    
     .portifolio {
         max-width: 768px;
     }
@@ -90,4 +95,5 @@
         margin: 20px;
     }
 }
+
 
