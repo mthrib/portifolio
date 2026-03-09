@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="styles/media-query.css">
     <script src="https://kit.fontawesome.com/10f5050d36.js" crossorigin="anonymous"></script>
+    <script src="script/menu.js" defer></script>
     <title>Portifólio MTH</title>
 </head>
 <body>
@@ -26,6 +27,27 @@
             <div class="btn-contato">
                 <a href="#contato"><button>Contato</button></a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-x"></i>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portifolio">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 

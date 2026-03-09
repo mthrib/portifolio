@@ -62,18 +62,18 @@ header nav a {
     transition: .4s;
 }
 
-header nav a:hover {
+header nav.meu-desktop a:hover {
     color: #ffff;
     text-shadow: 0px 0px 7px white;
     transition: 500ms;
     transform: scale(1.2);
 }
 
-header nav ul {
+header navul {
     list-style: none;
 }
 
-header nav ul li {
+header nav.meu-desktop  ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -402,8 +402,18 @@ footer .line-footer {
     
 }
 
+.overlay-menu {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.btn-abrir-menu {
+    display: none;
+}
 
 
 
  
-
