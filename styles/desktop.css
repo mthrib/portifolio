@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
+    behavior: smooth
 }
 
 body {
@@ -413,6 +414,7 @@ footer .line-footer {
 .btn-abrir-menu {
     display: none;
 }
+
 
 
 
